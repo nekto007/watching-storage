@@ -24,7 +24,7 @@ DB_SETTINGS=postgres://USER:PASSWORD@HOST:PORT/NAME
 ```
 Запустите сайт:
 ```
-python manage.py runserver 8000
+python manage.py runserver 0.0.0.0:8000
 ```
 Откройте сайт в браузере по адресу [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
@@ -32,4 +32,10 @@ python manage.py runserver 8000
 ```
 SECRET_KEY=YOUR_KEY
 DEBUG=true
+DATABASE_HOST = 'YOUR_HOST'
+DATABASE_NAME = 'YOUR_DB_NAME'
+PORT = YOUR_PORT
+DATABASE_USER = 'YOUR_USER'
+DATABASE_PASSWORD = 'YOUR_PASSWORD'
+
 ```
