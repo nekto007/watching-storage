@@ -20,7 +20,7 @@ pip install -r requirements.txt
 ```
 Создайте .env файл с конфигурацией
 ```
-DB_SETTINGS=postgres://USER:PASSWORD@HOST:PORT/NAME
+DB_SETTINGS=postgres://DATABASE_USER:DATABASE_PASSWORD@DATABASE_HOST:PORT/DATABASE_NAME
 ```
 Запустите сайт:
 ```
@@ -30,12 +30,8 @@ python manage.py runserver 0.0.0.0:8000
 
 Дополнительные настройки в .env
 ```
-SECRET_KEY=YOUR_KEY
+ALLOWED_HOSTS = '127.0.0.1'
+SECRET_KEY='YOUR_KEY'
 DEBUG=true
-DATABASE_HOST = 'YOUR_HOST'
-DATABASE_NAME = 'YOUR_DB_NAME'
-PORT = YOUR_PORT
-DATABASE_USER = 'YOUR_USER'
-DATABASE_PASSWORD = 'YOUR_PASSWORD'
-
+DB_URL = "postgres://DATABASE_USER:DATABASE_PASSWORD@DATABASE_HOST:PORT/DATABASE_NAME"
 ```
