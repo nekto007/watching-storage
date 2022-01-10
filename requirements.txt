@@ -1,5 +1,5 @@
 Django==1.11.21
 psycopg2-binary==2.8.6
 pytz==2021.3
-python-dotenv==0.19.2
 environs==9.4.0
+dj-database-url==0.5.0
